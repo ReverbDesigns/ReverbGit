@@ -1,0 +1,47 @@
+/*Home Banner*/
+body.default{
+    .home_banner{
+        background: url('../../images/slider-pattern.png') repeat scroll 0 0 transparent;
+        position: relative;
+        .banner_inner{
+            width: 1400px;
+            .texts{
+            }
+        }
+    }
+}
+
+.trial30_banner{
+    height: 227px;
+    background: url('../../images/banners/banner.jpg') no-repeat scroll center top #65a76b;
+    padding-top: 60px;
+    color: #fff;
+    h2{
+        font-size: 35px;
+        font-family: @baseFont3;
+        letter-spacing: 0.5px;
+        margin-top: 10px;
+        &:after{
+            display: block;
+            content: '';
+            width: 40px;
+            height: 3px;
+            background: #fff;
+            margin: 7px 0 15px;
+        }
+    }
+    h5{
+        font-size: 13px;
+        font-family: @baseFont;
+        font-style: italic;
+        letter-spacing: 0.5px;
+    }
+    a{
+        &:after{
+            border-color: #fff;
+        }
+        span{
+            background: @baseColor3;
+        }
+    }
+}

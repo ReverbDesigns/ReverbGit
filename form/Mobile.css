@@ -1,0 +1,134 @@
+/***************************************/
+/*                                     */
+/*       Romet's PHP Contact Form      */
+/*             Version 1.1             */
+/*  http://codecanyon.net/user/Romet6  */
+/*                                     */
+/***************************************/
+
+/* Mobile Size */
+@media screen and (max-width: 600px) {
+    #contactF-content form {
+	    width: 420px;
+    }
+	#contactF h1 {
+    	width           : 390px;
+    	height			: 14px;
+	}
+	#contactF-alert {
+    	font-size       : 18px;
+    	width           : 390px;
+    	height			: 14px;
+    	margin-top		: 10px;
+	}
+	#contactF-input {
+    	width           : 340px;
+	}
+	#contactF-company {
+		float			: none;
+    	width           : 100%;
+    	text-align		: center;
+    	margin-bottom	: 12px;
+    	padding-top		: 0px;
+	}
+	#contactF-details {
+    	display         : block;
+    	width           : 100%;
+	}
+	#contactF textarea {
+    	width           : 400px;
+    	margin-top		: 12px;
+	}
+	#contactF-attachment {
+		width           : 230px;
+		padding-left	: 85px;
+		padding-right	: 85px;
+		text-align		: center;
+	}
+	#contactF-attachment input {
+		clear			: both;
+		display			: block;
+		padding-top		: 6px;
+		margin			: 0px auto;
+	}
+	#contactF-verification {
+    	width           : 400px;
+    	margin-top		: -35px;
+    	margin-bottom	: 60px;
+    	height          : 40px;
+	}
+	#contactF label {
+		float			: right;
+	}
+	#contactF input[type="submit"] {
+		position		: relative;
+		top				: 68px;
+		margin-right	: 140px;
+	}
+}
+
+/* 320 Pixels Wide */
+@media screen and (max-width: 460px) {
+    #contactF-content form {
+	    width: 280px;
+    }
+	#contactF h1 {
+    	width           : 250px;
+    	height			: 40px;
+	}
+	#contactF-alert {
+    	font-size       : 18px;
+    	width           : 250px;
+    	height			: 28px;
+    	margin-top		: 10px;
+	}
+	#contactF-input {
+    	width           : 200px;
+	}
+	#contactF-company {
+		float			: none;
+    	width           : 100%;
+    	text-align		: center;
+    	margin-bottom	: 12px;
+    	padding-top		: 0px;
+	}
+	#contactF-details {
+    	display         : block;
+    	width           : 100%;
+	}
+	#contactF textarea {
+    	width           : 280px;
+    	margin-top		: 12px;
+	}
+	#contactF-attachment {
+		width           : 230px;
+		padding-left	: 20px;
+		padding-right	: 20px;
+		text-align		: center;
+	}
+	#contactF-attachment input {
+		clear			: both;
+		display			: block;
+		padding-top		: 6px;
+		margin			: 0px auto;
+	}
+	#contactF-verification {
+    	width           : 280px;
+    	margin-top		: -40px;
+    	margin-bottom	: 60px;
+    	height          : 40px;
+	}
+	#contactF-verification span {
+		width			: 100%;
+		display			: block;
+		font-size		: 15px;
+	}
+	#contactF label {
+		float			: left;
+	}
+	#contactF input[type="submit"] {
+		position		: relative;
+		top				: 68px;
+		margin-right	: 0px;
+	}
+}

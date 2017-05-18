@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Inquiry</title>
+
+	<!-- Your META here -->
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0" name="viewport">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/b-check-style.css">
+	<link rel="stylesheet" href="css/blue.css">
+
+	<!-- Scripts -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery-form.min.js"></script>
+    <script src="js/b-check-form-top.js"></script>
+
+	<!--[if lt IE 10]>
+			<script src="js/jquery.placeholder.min.js"></script>
+		<![endif]-->
+
+</head>
+<body class="bgf">
+	<div class="b-check wrapper-narrow">
+		<div class="b-row">
+			<header>Let's Make your vision a Reality</header>
+		</div>
+
+		<div class="hr"></div>
+
+		<form action="php/action.php" id="b-check-form" name="b-check-form" method="send_letter" novalidate>
+
+			<!-- start name  -->
+			<div class="b-row">
+				<div class="span6">
+					<div class="field">
+						<i class="fa fa-user icon-left"></i>
+						<input type="text" name="first-name" placeholder="first name">
+					</div>
+				</div>
+				<div class="span6">
+					<div class="field">
+						<i class="fa fa-user icon-left"></i>
+						<input type="text" name="last-name" placeholder="last name">
+					</div>
+				</div>
+			</div>
+			<!-- end name -->
+
+			<!-- start email phone-->
+			<div class="b-row">
+				<div class="span6">
+					<div class="field">
+						<i class="fa fa-envelope-o icon-left"></i>
+						<input type="text" name="email" placeholder="email">
+					</div>
+				</div>
+				<div class="span6">
+					<div class="field">
+						<i class="fa fa-phone icon-left"></i>
+						<input type="text" name="phone" placeholder="phone">
+					</div>
+				</div>
+			</div>
+			<!-- end email phone-->
+
+			<!-- start select department-->
+			<div class="b-row">
+				<div class="span12">
+					<div class="field">
+						<label class="select">
+							<i class="fa fa-ellipsis-v icon-select"></i>
+							<select name="department">
+								<option value="none" selected disabled>Select Project Type</option>
+								<option value="Web Development">Web Development</option>
+								<option value="Web Design">Web Design</option>
+								<option value="Logo Design">Logo Design</option>
+								<option value="Mobile">Mobile App Dev</option>
+                                <option value="Marketing">Marketing &amp; SEO</option>
+                                <option value="Other">Other</option>
+							</select>
+							<i class="cover-select"></i>
+						</label>
+					</div>
+				</div>
+			</div>
+			<!-- end select department-->
+
+			<!-- start message -->
+			<div class="b-row">
+				<div class="span12">
+					<div class="field">
+						<i class="fa fa-comments-o icon-left"></i>
+						<textarea name="message" placeholder="Project Summary and Timeline" spellcheck="false"></textarea>
+					</div>
+				</div>
+			</div>
+			<!-- end message -->
+
+			<div class="hr"></div>
+
+			<!-- start buttons -->
+			<div class="b-row">
+				<div class="offset8 span4">
+					<button type="submit" class="button">Submit</button>
+				</div>
+			</div>
+			<!-- end buttons -->
+		</form>
+	</div>
+</body>
+</html>

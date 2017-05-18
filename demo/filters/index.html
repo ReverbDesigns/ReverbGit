@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SVG spilled Water Effect</title>
+  <meta name="author" content="Reverb Designs">
+  <meta name="keywords" content="SVG Liquid Filters to manipulate Google Fonts">
+  <meta name="description" content="SVG Liquid Filters to manipulate Google Fonts">
+  <style>
+    html{
+      height: 100%;
+    }
+
+    body{
+      background-color: #F1E8FB;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    @media screen and (max-width: 1281px) {
+      body {
+        background-image:  url('reverb_m.png');
+      }
+    }
+
+    @media screen and (max-width: 760px) {
+      body {
+        background-image:  url('reverb_s.png');
+      }
+    }
+
+    @media screen and (min-width: 1281px),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and ( min--moz-device-pixel-ratio: 2),
+    screen and ( min-device-pixel-ratio: 2),
+    screen and ( min-resolution: 192dpi),
+    screen and ( min-resolution: 2dppx){
+          body {
+            background-image:  url('reverb_l.png');
+          }
+    }
+
+    ::selection {
+      background: #A64DFF;
+    }
+
+    ::-moz-selection {
+      background: #A64DFF;
+    }
+
+    svg{
+      display: block;
+      position: relative;
+      width: 740px;
+      height: 300px;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      margin: 0 auto;
+      overflow: hidden;
+      background-size: cover;
+    }
+
+    .filtered{
+      filter: url(#filter);
+      -webkit-filter: url(#filter);
+      color: #16B5FF;
+      fill: #16B5FF;
+      font-family: 'Righteous';
+      font-size: 180px;
+    }
+  </style>
+  <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"Y6G9m1agbiF2vg", domain:"reverbdesigns.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=Y6G9m1agbiF2vg" style="display:none" height="1" width="1" alt="" /></noscript>
+<!-- End Alexa Certify Javascript -->  
+</head>
+
+<body>
+  <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <defs>
+      <filter id="filter" width="150%" height="160%" x="-25%" y="-25%">
+      <!-- COLORS -->
+        <feFlood flood-color="#4deecc" result="COLOR-blue" />‚
+        <feFlood flood-color="#c172fe" result="COLOR-violet" />
+        <feFlood flood-color="#eb74fe" result="COLOR-violet-light" />
+      <!-- COLORS END -->
+
+      <!-- BOTTOM Reverb -->
+        <feTurbulence baseFrequency="0.05" type="fractalNoise" numOctaves="1" seed="2" result="BOTTOM-Reverb_10" />
+        <feGaussianBlur stdDeviation="6.5"  in="SourceAlpha" result="BOTTOM-Reverb_20" />
+        <feDisplacementMap scale="420" in="BOTTOM-Reverb_20" in2="BOTTOM-Reverb_10" result="BOTTOM-Reverb_30"/>
+        <feComposite operator="in" in="COLOR-blue" in2="BOTTOM-Reverb_30" result="BOTTOM-Reverb_40" />
+      <!-- BOTTOM END -->
+
+      <!-- MIDDLE Reverb -->
+        <feTurbulence baseFrequency="0.1" type="fractalNoise" numOctaves="1" seed="1" result="MIDDLE-Reverb_10" />
+        <feGaussianBlur in="SourceAlpha" stdDeviation="0.1" result="MIDDLE-Reverb_20" />
+        <feDisplacementMap in="MIDDLE-Reverb_20" in2="MIDDLE-Reverb_10" scale="25" result="MIDDLE-Reverb_30"/>
+        <feComposite in="COLOR-violet-light" in2="MIDDLE-Reverb_30" operator="in" result="MIDDLE-Reverb_40" />
+      <!-- MIDDLE END -->
+
+      <!-- TOP Reverb -->
+        <feTurbulence baseFrequency="0.07" type="fractalNoise" numOctaves="1" seed="1" result="TOP-Reverb_10" />
+        <feGaussianBlur stdDeviation="3.5" in="SourceAlpha" result="TOP-Reverb_20" />
+        <feDisplacementMap scale="220" in="TOP-Reverb_20" in2="TOP-Reverb_10" result="TOP-Reverb_30"/>
+        <feComposite operator="in" in="COLOR-violet" in2="TOP-Reverb_30" result="TOP-Reverb_40" />
+      <!-- TOP END -->
+
+      <!-- LIGHT EFFECTS -->
+        <feMerge  result="LIGHT-EFFECTS_10">
+          <feMergeNode in="BOTTOM-Reverb_40" />
+          <feMergeNode in="MIDDLE-Reverb_40" />
+          <feMergeNode in="TOP-Reverb_40" />
+        </feMerge>
+        <feColorMatrix type="matrix"
+        values="0 0 0 0 0,
+        0 0 0 0 0,
+        0 0 0 0 0,
+        0 0 0 1 0" in="LIGHT-EFFECTS_10" result="LIGHT-EFFECTS_20" />
+        <feGaussianBlur stdDeviation="2" in="LIGHT-EFFECTS_20" result="LIGHT-EFFECTS_30" />
+        <feSpecularLighting surfaceScale="5" specularConstant=".75" specularExponent="30" lighting-color="#white" in="LIGHT-EFFECTS_30" result="LIGHT-EFFECTS_40">
+          <fePointLight x="-50" y="-100" z="400" />
+        </feSpecularLighting>
+        <feComposite operator="in" in="LIGHT-EFFECTS_40" in2="LIGHT-EFFECTS_20" result="LIGHT-EFFECTS_50"/>
+        <feComposite operator="arithmetic" k1="0" k2="1" k3="1" k4="0" in="LIGHT-EFFECTS_10" in2="LIGHT-EFFECTS_50" result="LIGHT-EFFECTS_60"/>
+      </filter>
+      <!-- LIGHT EFFECTS END -->
+    </defs>
+      <text class="filtered" x="50" y="200">Reverb!</text>
+  </svg>
+</body>
+</html>

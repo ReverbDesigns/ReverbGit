@@ -1,0 +1,41 @@
+/*-----------------------------------------------------------------------------------
+	
+	COLORED STYLE
+	
+-----------------------------------------------------------------------------------*/
+
+.separator span, .separator-small span {
+	background: #0dfdb6 !important;
+}
+.colored {
+	color: #0dfdb6;
+}
+p a:hover:after {
+	background: #0dfdb6;
+	color: undefined;
+}
+.pace .pace-progress {
+	background: #0dfdb6;
+	color: undefined;
+}
+[data-bigletter]:before { color: #5acae6; }
+.visible[data-bigletter]:before {
+	opacity: 0.2;
+	filter: alpha(opacity=20);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+	color: undefined;
+}
+nav#main-nav .nav-inner ul li:hover > a, nav#main-nav .nav-inner ul li.current-menu-item > a { color: #5acae6; }
+nav#main-nav [data-bigletter]:before { color: #ffffff; }
+.skill .skill-bar .skill-active {
+	background: #0dfdb6;
+}
+footer #backtotop:after {
+	background: #0dfdb6;
+}
+.filter li a:after {
+	background: #0dfdb6;
+}
+figure.imgoverlay.overlay-border > a {
+	border-color: #0dfdb6;
+}

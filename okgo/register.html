@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, target-density=device-density"/>
+<meta charset="utf-8">
+<title>OKGO - Beta Backer's Club Registration </title>
+<meta name="description" content="OKGO - Be among the first to go places, see things, meet people and find your way to whatever you may be seeking.">
+<meta name="author" content="OKGO">
+<!-- Load scripts -->
+<script src="scripts/jquery-1.11.1.js"></script>
+<script src="scripts/jquery.maskedinput.js"></script>
+<script src="scripts/jquery.mousewheel.js"></script>
+<script src="scripts/perfect-scrollbar.js"></script>
+<script src="scripts/formify.min.js"></script>
+<!-- Load styles & fonts -->
+<link rel="stylesheet" type="text/css" href="formify/styles/default/style.css"/>
+<link rel="stylesheet" type="text/css" href="formify/styles/layout.css"/>
+<link rel="stylesheet" type="text/css" href="formify/styles/perfect-scrollbar.css"/>
+<link rel="stylesheet" type="text/css" href="formify/icons/css/font-awesome.css"/>
+<link rel="stylesheet" type="text/css" href="formify/assets/open_sans/stylesheet.css"/>
+
+<link rel="stylesheet" type="text/css" href="formify/style.css"/>
+<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"Y6G9m1agbiF2vg", domain:"reverbdesigns.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=Y6G9m1agbiF2vg" style="display:none" height="1" width="1" alt="" /></noscript>
+<!-- End Alexa Certify Javascript -->  
+</head>
+<body>
+<!-- Page content, ignore -->
+<div class="page-heading">
+    <h1>Be a part of something <strong>New</strong></h1>
+    <h2>The Unkown is Calling<br><br> Space is running out, Signup today.<br><br></h2>
+</div>
+<!-- End of page content -->
+<div class="page formify">
+        <div class="row">
+            <div class="col col-12">
+                <h1>OKGO Insider's Club</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-12">
+                <input placeholder="User name" appearance="big" width="100%" style="width:100%;"/>
+            </div>
+            <div class="col col-12 space-top-10">
+                <input placeholder="E-mail" validate="email" errortip="Please <strong>check</strong> your e-mail" width="100%" style="width:100%;" />
+            </div>
+        </div>
+        <div class="row border space-bottom-25">
+            <div class="col col-6 space-top-10">
+                <input id="password" placeholder="Password" type="password" appearance="text" validate="password" errortip="More than <strong>5 characters</strong>" width="100%" style="width:100%;" />
+            </div>
+            <div class="col col-6 space-top-10">
+                <input id="repeatPassword" placeholder="Repeat password" appearance="text" type="password" width="100%" style="width:100%;" disabled/>
+            </div>
+        </div>
+        <div class="row border space-bottom-25">
+            <div class="col col-12 space-top-10">
+                <h3>Who are you?</h3>
+                <input type="radio" label="Boy" name="gender"/><input type="radio" label="Girl" name="gender"/><input type="radio" label="Undefined" name="gender" checked/>
+            </div>
+        </div>
+        <div class="row border space-bottom-15">
+            <div class="col col-12 space-top-15">
+                <div class="inputLabel" style="line-height:30px;">
+                    I agree with the Terms and Conditions
+                </div>
+                <input type="checkbox" appearance="switch" style="float:right;margin-right:0;"/>
+            </div>
+        </div>
+        <div class="row space-bottom-15 space-top-15">
+            <div class="col col-12">
+                <input type="submit" value="Send" style="float:right;margin:0;" />
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+</div>
+<!-- Run script after creating elements -->
+<script>
+    formifyValidate.password = /^.{6,}$/i;
+
+    var _ = function(id)
+    {
+        return document.getElementById(id)
+    };
+    var passwordInput = _('password'),
+        repeatInput = _('repeatPassword');
+    passwordInput.onChange = function()
+    {
+        if (passwordInput.getState() !== 'error')
+        {
+            repeatInput.setState('normal');
+        }
+        else
+        {
+            repeatInput.setState('disabled');
+        }
+
+        console.log(passwordInput.getState());
+    };
+    repeatInput.onChange = function()
+    {
+        if (passwordInput.value !== repeatInput.value)
+        {
+            repeatInput.setErrorTip('Passwords <strong>isn\'t match</strong>');
+            repeatInput.setState('error');
+        }
+        else
+        {
+            repeatInput.setState('success');
+        }
+    };
+
+    formify();
+    </script>
+</body>
+</html>

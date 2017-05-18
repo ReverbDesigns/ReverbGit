@@ -1,0 +1,25 @@
+/* 
+ *  Chart & relationship Demo on Cytoscape
+ *  v1
+ *  Author: Reverb Designs
+ */
+
+body { 
+  font: 14px  Droid Sans, sans-serif, 700;
+}
+
+h1 {
+   font: 32px  Droid Sans, sans-serif, 700;
+}
+
+h3 {
+	font: 19px  Droid Sans, sans-serif, 700;
+}
+
+#cy {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}

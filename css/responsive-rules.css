@@ -1,0 +1,857 @@
+/*---------------------------------width 1024 started-------------------------------------*/
+@media screen and (min-width: 1023px) and (max-width: 1170px) {
+  .box 
+  {
+    width: 50%;
+  }
+  .wide 
+  {
+    width: 50%;
+  }
+
+}
+/*---------------------------------width 768 started-------------------------------------*/
+@media screen and (min-width: 990px) and (max-width: 1023px) {
+  .box 
+  {
+    width: 50%;
+  }
+  .wide 
+  {
+    width: 50%;
+  }
+  /*-----home section content-----*/
+.hero-content h1 
+  {  
+   font-size: 55px; 
+  }
+  .hero-content p 
+  {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .home-button 
+  {
+    padding: 10px 10px;
+    border-radius: 25px; 
+  }
+   .hero-content-sl h1 
+  {
+    font-size: 55px;       
+  }
+  .hero-content-sl h2 
+  {
+    letter-spacing: 5px;
+    font-size: 28px;
+    line-height: 45px;
+  } 
+  /*------main head sections------*/
+  .main-head
+  {
+    font-weight: 600;
+    font-size: 40px;
+  }
+}
+/*---------------------------------width 768 started-------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 989px) {
+
+  /*-----home section content-----*/
+  .ovl-blue-gradient {
+        background: url('../images/strings.png') center center no-repeat;
+        background-size: cover;
+        background-position: 0 0;
+    }
+.hero-content h1 
+  {  
+   font-size: 55px; 
+  }
+  .hero-content p 
+  {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .home-button 
+  {
+    padding: 10px 10px;
+    border-radius: 25px; 
+  }
+   .hero-content-sl h1 
+  {
+    font-size: 55px;       
+  }
+  .hero-content-sl h4 
+  {
+    /*font-size: 24px;*/
+  }
+  .hero-content-sl h2 
+  {
+    letter-spacing: 5px;
+    font-size: 28px;
+    line-height: 45px;
+  } 
+  /*------main head sections------*/
+  .main-head
+  {
+    font-weight: 600;
+    font-size: 35px;
+  }
+  .head-cube 
+  {
+    margin-bottom: 20px;
+    background: #EF4035;
+  }
+  .header-main
+  {
+   padding-top: 50px;
+  }
+  /*----service section-----*/
+  .serv_item 
+  {
+    width: 33%;
+  }
+  /*------ team section-------*/
+  .team_member 
+  {
+    width: 50%;
+  }
+  /*----skill ser properties----*/
+  .adj-pad-bottom-50 /*only for responsive*/
+  {
+    padding-bottom: 50px;
+  }
+  /*----portfolio-----*/
+  .filter 
+  {
+    padding: 5px 5px;
+    margin-right: 5px;
+    border: dashed 1px #dfdfdf;
+    font-size: 10px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .box 
+  {
+    width: 50%;
+    height: 300px;
+  }
+  .wide 
+  {
+    width: 100%;
+  }
+  .big 
+  {
+    height: 400px;
+  }
+  .big_button 
+  {
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  /*-----Testimonial Text-----*/
+  .testimonial_text 
+  {
+    font-size: 16px;
+    line-height: 1.4em;
+  }
+  .testimonial_author 
+  {
+    font-size: 18px;
+  }
+  /*----contact section*/
+  .adj-mar-top-50
+  {
+    margin-top: 50px;
+  }
+  /*footer*/
+   .footertag {
+        font-size: 16px;
+    }
+  .highlight-services-items_icon
+  {
+    left: 15px;
+  }
+  .highlight-services-items_icon.left
+  {
+    right: 15px;
+  }
+.fifty-block
+     {
+      width: 100%;
+    }
+
+    .bigtext
+      {
+        font-size: 40px;
+        font-family: 'Lato';
+      }
+ }
+ /*------------------------width 768 completed----------------------------------------------- */
+/*------------------------600 optimization started-------------------------------------------*/
+@media screen and (min-width: 600px) and (max-width: 767px){
+
+ 
+/*-----home section content-----*/
+.ovl-blue-gradient {
+        background: url('../images/strings.png') center center no-repeat;
+        background-size: cover;
+        background-position: 0 0;
+    }
+.hero-content h1 
+  {  
+   font-size: 55px; 
+  }
+  .hero-content p 
+  {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .hero_right
+  {
+    width: 100%;
+    padding-left: 10%;
+  }    
+  .home-button 
+  {
+    padding: 10px 10px;
+    border-radius: 25px; 
+  }
+   .hero-content-sl h1 
+  {
+    font-size: 32px;       
+  }
+  .hero-content-sl h4 
+  {
+    /*font-size: 24px;*/
+  }
+  .hero-content-sl h2 
+  {
+    letter-spacing: 1px;
+    font-size: 22px;
+    line-height: 30px;
+  } 
+  /*------main head sections------*/
+  .main-head
+  {
+    font-weight: 600;
+    font-size: 35px;
+  }
+  .head-cube 
+  {
+    margin-bottom: 20px;
+    background: #EF4035;
+  }
+  .header-main
+  {
+   padding-top: 50px;
+  }
+  /*----service section-----*/
+  .serv_item 
+  {
+    width: 100%;
+  }
+  /*------ team section-------*/
+  .team_member 
+  {
+    width: 50%;
+  }
+  /*----skill ser properties----*/
+  .adj-pad-bottom-50 /*only for responsive*/
+  {
+    padding-bottom: 50px;
+  }
+  .highlight-services-items_icon
+  {
+    left: 15px;
+  }
+  .highlight-services-items_icon.left
+  {
+    right: 15px;
+  }
+  
+  /*----portfolio-----*/
+  .filter 
+  {
+    padding: 5px 5px;
+    margin-right: 5px;
+    border: dashed 1px #dfdfdf;
+    font-size: 10px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .filter a
+  {
+    
+  }
+  .box 
+  {
+    width: 50%;
+    height: 300px;
+  }
+  .wide 
+  {
+    width: 100%;
+  }
+  .big 
+  {
+    height: 400px;
+  }
+  .big_button 
+  {
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  /*-----Testimonial Text-----*/
+  .testimonial_text 
+  {
+    font-size: 16px;
+    line-height: 1.4em;
+  }
+  .testimonial_author 
+  {
+    font-size: 18px;
+  }
+  /*----contact section*/
+  .adj-mar-top-50
+  {
+    margin-top: 50px;
+  }
+  /*footer*/
+    .footertag {
+        font-size: 16px;
+    }
+.fifty-block
+     {
+      width: 100%;
+    }
+
+    .bigtext
+      {
+        font-size: 40px;
+        font-family: 'Lato';
+      }
+
+
+}
+ /*-------------------------- width  600 optimisation completed----------------------------------*/
+ /*--------------------------- width 480 optimization started------------------------------------*/
+@media screen and (min-width: 480px) and (max-width: 599px) {
+  /*-----common sections-----*/
+  .ovl-blue-gradient {
+        background: url('../images/strings.png') center center no-repeat;
+        background-size: cover;
+        background-position: 0 0;
+    }
+  body 
+  {
+
+    font-size: 12px;
+  }
+  p 
+  {
+    font-size: 14px;
+    line-height: 30px;
+  }
+  h1, h2, h3, h4, h5, h6 
+  {
+    font-weight: 600;
+  }
+/*-----home section content-----*/
+.hero-content h1 
+  {  
+   font-size: 50px; 
+  }
+  .hero-content p 
+  {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .hero_right
+  {
+    width: 100%;
+    padding-left: 10%;
+  }  
+  .home-button 
+  {
+    padding: 10px 10px;
+    border-radius: 25px; 
+  }
+  .hero-content-sl h1 
+  {
+    font-size: 26px;       
+  }
+  .hero-content-sl h4 
+  {
+    font-size: 20px;
+  }
+  .hero-content-sl h2 
+  {
+    letter-spacing: 1px;
+    font-size: 20px;
+    line-height: 30px;
+  }  
+  /*------main head sections------*/
+  .main-head
+  {
+    font-weight: 600;
+    font-size: 35px;
+  }
+  .head-cube 
+  {
+    margin-bottom: 20px;
+    background: #EF4035;
+  }
+  .header-main
+  {
+   padding-top: 50px;
+  }
+  /*----service section-----*/
+  .serv_item 
+  {
+    width: 100%;
+  }
+  /*------ team section-------*/
+  .team_member 
+  {
+    width: 100%;
+  }
+  /*----skill ser properties----*/
+  .adj-pad-bottom-50 /*only for responsive*/
+  {
+    padding-bottom: 50px;
+  }
+  /*----portfolio-----*/
+  .filter 
+  {
+    padding: 5px 5px;
+    margin-right: 5px;
+    border: dashed 1px #dfdfdf;
+    font-size: 10px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .filter a
+  {
+    
+  }
+  .box 
+  {
+    width: 100%;
+    height: 300px;
+  }
+  .wide 
+  {
+    width: 100%;
+  }
+  .big 
+  {
+    height: 400px;
+  }
+  .big_button 
+  {
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  /*-----Testimonial Text-----*/
+  .testimonial_text 
+  {
+    font-size: 16px;
+    line-height: 1.4em;
+  }
+  .testimonial_author 
+  {
+    font-size: 18px;
+  }
+  .highlight-services-items_icon
+  {
+    left: 15px;
+  }
+  .highlight-services-items_icon.left
+  {
+    right: 15px;
+  }
+
+  /*----contact section*/
+  .adj-mar-top-50
+  {
+    margin-top: 50px;
+  }
+  /*footer*/
+   footer {
+        background: #28282E;
+        height: auto;
+    }
+    .footertag {
+        font-size: 400;
+        font-size: 14px;
+    }
+.fifty-block
+     {
+      width: 100%;
+    }
+
+    .bigtext
+      {
+        font-size: 40px;
+        font-family: 'Lato';
+      }
+}
+/*--------------------------max width  480 optimisation completed----------------------------------*/
+
+/*--------------------------width  360 optimisation started----------------------------------------*/
+
+@media screen and (min-width: 360px) and (max-width: 479px) {
+  /*-----common sections-----*/
+  
+  body 
+  {
+
+    font-size: 12px;
+  }
+  p 
+  {
+    font-size: 14px;
+    line-height: 30px;
+  }
+  h1, h2, h3, h4, h5, h6 
+  {
+    font-weight: 600;
+  }
+/*-----home section content-----*/
+.ovl-blue-gradient {
+        background: url('../images/strings.png') center center no-repeat;
+        background-size: cover;
+        background-position: 0 0;
+    }
+.hero-content h1 
+  {  
+   font-size: 40px; 
+  }
+  .hero-content p 
+  {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .home-button 
+  {
+    padding: 10px 10px;
+    border-radius: 25px; 
+  }
+  .hero_right
+  {
+    width: 100%;
+    padding-left: 10%;
+  }
+
+
+  .hero-content-sl h1 
+  {
+    font-size: 22px;       
+  }
+  .hero-content-sl h4 
+  {
+    font-size: 16px;
+  }
+  .hero-content-sl h2 
+  {
+    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 30px;
+  }  
+  /*------main head sections------*/
+  .main-head
+  {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .head-cube 
+  {
+    margin-bottom: 20px;
+    background: #EF4035;
+  }
+  .header-main
+  {
+   padding-top: 50px;
+  }
+  /*----service section-----*/
+  .serv_item 
+  {
+    width: 100%;
+  }
+  /*------ team section-------*/
+  
+  .team_member 
+  {
+    width: 100%;
+  }
+  /*----skill ser properties----*/
+  .adj-pad-bottom-50 /*only for responsive*/
+  {
+    padding-bottom: 50px;
+  }
+  .clears-r {
+        clear: both;
+    }
+  /*----portfolio-----*/
+  .filter 
+  {
+    padding: 5px 5px;
+    margin-right: 5px;
+    border: dashed 1px #dfdfdf;
+    font-size: 10px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .filter a
+  {
+    
+  }
+  .box 
+  {
+    width: 100%;
+    height: 300px;
+  }
+  .wide 
+  {
+    width: 100%;
+  }
+  .big 
+  {
+    height: 400px;
+  }
+  .big_button 
+  {
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  /*-----Testimonial Text-----*/
+  .testimonial_text 
+  {
+    font-size: 16px;
+    line-height: 1.4em;
+  }
+  .testimonial_author 
+  {
+    font-size: 18px;
+  }
+  .adj-mar-top-50
+  {
+    margin-top: 50px;
+  }
+  .clears-r {
+        clear: both;
+    }
+
+  .highlight-services-items_icon
+  {
+    left: 15px;
+  }
+  .highlight-services-items_icon.left
+  {
+    right: 15px;
+  }
+  /*footer*/
+   footer {
+        background: #28282E;
+        height: auto;
+    }
+    .footertag {
+        font-size: 400;
+        font-size: 12px;
+    }
+.fifty-block
+     {
+      width: 100%;
+    }
+
+    .bigtext
+      {
+        font-size: 40px;
+        font-family: 'Lato';
+      }
+ }
+/*--------------------------max width  360 optimisation completed----------------------------------*/
+/*--------------------------max width  320 optimisation started------------------------------------*/
+@media screen and (min-width: 320px) and (max-width: 359px) {
+/*-----common sections-----*/
+  body 
+  {
+
+    font-size: 12px;
+  }
+  p 
+  {
+    font-size: 14px;
+    line-height: 30px;
+  }
+  h1, h2, h3, h4, h5, h6 
+  {
+    font-weight: 600;
+  }
+/*-----home section content-----*/
+.ovl-blue-gradient {
+        background: url('../images/strings.png') center center no-repeat;
+        background-size: cover;
+        background-position: 0 0;
+    }
+.hero-content h1 
+  {  
+   font-size: 35px; 
+  }
+  .hero-content p 
+  {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .hero_right
+  {
+    width: 100%;
+    padding-left: 10%;
+  }
+
+  .home-button 
+  {
+    padding: 10px 10px;
+    border-radius: 25px; 
+  }
+  .hero-content-sl h1 
+  {
+    font-size: 22px;       
+  }
+  .hero-content-sl h4 
+  {
+    font-size: 16px;
+  }
+  .hero-content-sl h2 
+  {
+    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 30px;
+  }  
+  /*------main head sections------*/
+  .main-head
+  {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .head-cube 
+  {
+    margin-bottom: 20px;
+    background: #EF4035;
+  }
+  .header-main
+  {
+   padding-top: 50px;
+  }
+  /*----service section-----*/
+  .serv_item 
+  {
+    width: 100%;
+  }
+  /*------ team section-------*/
+ 
+  .team_member 
+  {
+    width: 100%;
+  }
+  /*----skill ser properties----*/
+  .adj-pad-bottom-50 /*only for responsive*/
+  {
+    padding-bottom: 50px;
+  }
+  /*process*/
+  .clears-r {
+        clear: both;
+    }
+  /*----portfolio-----*/
+  .filter 
+  {
+    padding: 5px 5px;
+    margin-right: 5px;
+    border: dashed 1px #dfdfdf;
+    font-size: 10px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .filter a
+  {
+    
+  }
+  .box 
+  {
+    width: 100%;
+    height: 300px;
+  }
+  .wide 
+  {
+    width: 100%;
+  }
+  .big 
+  {
+    height: 400px;
+  }
+  .big_button 
+  {
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  /*-----Testimonial Text-----*/
+  .testimonial_text 
+  {
+    font-size: 16px;
+    line-height: 1.4em;
+  }
+  .testimonial_author 
+  {
+    font-size: 18px;
+  }
+  .adj-mar-top-50
+  {
+    margin-top: 50px;
+  }
+
+    .highlight-services-items_icon
+  {
+    left: 8px;
+  }
+  .highlight-services-items_icon.left
+  {
+    right: 8px;
+  }
+  /*footer*/
+   footer {
+        background: #28282E;
+        height: auto;
+    }
+    .footertag {
+        font-size: 400;
+        font-size: 12px;
+        letter-spacing: auto;
+    }
+  .fifty-block
+     {
+      width: 100%;
+    }
+
+    .bigtext
+      {
+        font-size: 40px;
+        font-family: 'Lato';
+      }
+}
+/*--------------------------max width  320 optimisation completed----------------------------------*/

@@ -1,0 +1,33 @@
+
+/* Color: red
+=============================== */
+.b-check .button,
+.b-check .file-button,
+.b-check .reset-button {
+	background-color:#ef3e3e;
+	border:1px solid #ef3e3e;
+	color:#fff;
+	-ms-transition:all 0.15s ease 0s;
+	-moz-transition:all 0.15s ease 0s;
+	-webkit-transition:all 0.15s ease 0s;
+	transition:all 0.15s ease 0s;
+}
+.b-check .button:hover,
+.b-check .file-button:hover,
+.b-check .reset-button:hover {
+	background-color:#fff;
+	color:#ef3e3e;
+	-ms-transition:all 0.15s ease 0s;
+	-moz-transition:all 0.15s ease 0s;
+	-webkit-transition:all 0.15s ease 0s;
+	transition:all 0.15s ease 0s;
+}
+.b-check .bar {
+	background-color:#ef3e3e;
+}
+.b-check .ratings input[type=radio] + label:hover,
+.b-check .ratings input[type=radio] + label:hover ~ label,
+.b-check .ratings input[type=radio]:checked + label,
+.b-check .ratings input[type=radio]:checked + label ~ label {
+	color:#ef3e3e;
+}

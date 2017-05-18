@@ -1,0 +1,8 @@
+sitemap: https://reverbdesigns.com/sitemap.html
+
+User-Agent: *
+Disallow:
+
+
+User-agent: ia_archiver
+Disallow:

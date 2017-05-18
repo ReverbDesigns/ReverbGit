@@ -1,0 +1,39 @@
+html,
+body {
+	background-attachment: fixed;
+	background-position: 50% 50%;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+}
+
+.black {
+	background-image: url("../img/bg-black.jpg");
+}
+.dark-blue {
+	background-image: url("../img/bg-dark-blue.jpg");
+}
+.blue {
+	background-image: url("../img/bg-blue.jpg");
+}
+.purple {
+	background-image: url("../img/bg-purple.jpg");
+}
+.dark-red {
+	background-image: url("../img/bg-dark-red.jpg");
+}
+.red {
+	background-image: url("../img/bg-red.jpg");
+}
+.orange {
+	background-image: url("../img/bg-orange.jpg");
+}
+.green {
+	background-image: url("../img/bg-green.jpg");
+}
+.yellow {
+	background-image: url("../img/bg-yellow.jpg");
+}
+.white {
+	background-image: url("../img/bg-white.jpg");
+}

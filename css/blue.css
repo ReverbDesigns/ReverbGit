@@ -1,0 +1,35 @@
+/* Color: blue
+=============================== */
+.b-check .button,
+.b-check .file-button,
+.b-check .reset-button {
+	background-color: #46edca;
+	border: 1px solid #46edca;
+	color: #fff;
+	-ms-transition: all 0.15s ease 0s;
+	-moz-transition: all 0.15s ease 0s;
+	-webkit-transition: all 0.15s ease 0s;
+	transition: all 0.15s ease 0s;
+}
+.b-check .button:hover,
+.b-check .file-button:hover,
+.b-check .reset-button:hover {
+	background-color:#fff;
+	color:#46edca;
+	-ms-transition:all 0.15s ease 0s;
+	-moz-transition:all 0.15s ease 0s;
+	-webkit-transition:all 0.15s ease 0s;
+	transition:all 0.15s ease 0s;
+}
+
+.b-check .ratings input[type=radio] + label:hover,
+.b-check .ratings input[type=radio] + label:hover ~ label,
+.b-check .ratings input[type=radio]:checked + label,
+.b-check .ratings input[type=radio]:checked + label ~ label {
+	color:#0081c6;
+}
+.blue {
+	background-repeat: repeat;
+	background-position: center center;
+	background-image: url(http://www.reverbdesigns.com/files/uploads/polyparbg.png);
+	background-size: cover;

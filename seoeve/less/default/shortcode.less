@@ -1,0 +1,102 @@
+.borderred_link{
+    margin-top: 30px;
+    display: inline-block;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: @baseFont2;
+    border-radius: 25px;
+    padding: 0;
+    position: relative;
+    border: none;
+    margin-left: 3px;
+    span{
+        background: @baseColor;
+        display: block;
+        padding: 0 35px;
+        border-radius: 25px;
+        letter-spacing: 0.5px;
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        bottom: -3px;
+        right: -3px;
+        border: 3px solid fade(#000, 8%);
+        border-radius: 25px;
+        opacity: 1;
+        .transition();
+    }
+    &:hover{
+        color: #fff;
+        &:after{
+            top: -20px;
+            left: -20px;
+            bottom: -20px;
+            right: -20px;
+            opacity: 0;
+            border-radius: 0;
+            border: 3px solid fade(#000, 20%);
+        }
+    }
+}
+
+.register_link{
+    padding: 30px 40px;
+    text-align: center;
+    border-bottom: 3px solid @baseColor;
+    background: #f8f8f8;
+    margin-top: 50px;
+    h5{
+        margin: 0 0 15px;
+        font-size: 13px;
+        font-family: @baseFont2;
+        color: @baseColor3;
+        line-height: 24px;
+        
+    }
+    a{
+        margin: 0;
+        &:after{
+            border-color: #eaeaea;
+            border-radius: 100%;
+        }
+        span{
+            width: 88px;
+            height: 88px;
+            font-family: @baseFont2;
+            font-size: 12px;
+            background: #e99544;
+            border-radius: 100%;
+            padding: 27px 0 0;
+            text-align: center;
+            line-height: 20px;
+        }
+    }
+    p{
+        font-family: @baseFont;
+        color: @baseColor3;
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        line-height: 1;
+        margin-top: 15px;
+        font-style: italic;
+    }
+}
+
+.lh45{
+    line-height: 45px;
+}
+
+.dot270{
+    height: 270px;
+    margin: 0;
+    background: url('../../images/dot-pattern.png') repeat scroll 0 0;
+    position: relative;
+    z-index: -1;
+    margin-top: -83px;
+}

@@ -1,0 +1,258 @@
+body.default{
+    header{
+        .top_row{
+            background: #f5f6f7;
+            .tagLine{
+                font-size: 11px;
+                font-family: @baseFont3;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: @baseColor2;
+                line-height: 50px;
+                i{
+                    font-size: 15px;
+                    float: left;
+                    line-height: 50px;
+                    margin-right: 5px;
+                }
+            }
+            .navbar-right{
+                li{
+                    float: left;
+                    a{
+                        font-size: 11px;
+                        font-family: @baseFont3;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        color: @baseColor2;
+                        line-height: 50px;
+                        padding: 0 15px;
+                        img{
+                            margin-right: 5px;
+                        }
+                    }
+                    ul{
+                        padding: 0;
+                        border-radius: 0;
+                        border: none;
+                        li{
+                            float: none;
+                            display: block;
+                            border-bottom: 1px solid  #ccc;
+                            a{
+                                line-height: 40px;
+                                &:hover{
+                                    background: none @baseColor;
+                                    color: #FFF;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } // Top Row
+        
+        .logo_row{
+            .logo{
+                margin: 32.5px auto;
+                float: left;
+                img{
+                }
+            }
+            .nav{
+                float: right;
+                margin: 34px auto;
+                li{
+                    float: left;
+                    display: inline-block;
+                    margin-left: 15px;
+                    a{
+                        line-height: 40px;
+                        padding: 0 15px 0 0;
+                        border-radius: 50px;
+                        border: 1px solid  #ebeef0;
+                        height: 42px;
+                        font-family: @baseFont3;
+                        font-size: 12px;
+                        color: #777;
+                        letter-spacing: 0.5px;
+                        .first-word{
+                            color: #232323;
+                        }
+                        .icon{
+                            float: left;
+                            width: 40px;
+                            line-height: 40px;
+                            height: 40px;
+                            text-align: center;
+                            background: no-repeat scroll center center transparent;
+                            margin-right: 15px;
+                            border-right: 1px solid  #ebeef0;
+                            &.phone{
+                                background-image: url('../../images/icons/menu/phone-c.png');
+                            }
+                            &.email{
+                                background-image: url('../../images/icons/menu/email-c.png');
+                            }
+                            &.share{
+                                background-image: url('../../images/icons/menu/share.png');
+                                margin-right: 0;
+                                border: none;
+                            }
+                        }
+                    }
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                    &:last-child{
+                        a{
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        } // Logo Row
+        .menu_row{
+            background: @baseColor;
+            .menu_area{
+                width: 695px;
+                #mainMenu{
+                    padding: 0;
+                    .navbar-nav{
+                        text-transform: uppercase;
+                        margin-left: -15px;
+                        li{
+                            position: relative;
+                            a{
+                                color: #fff;
+                                padding: 0 30px;
+                                line-height: 57px;
+                                position: relative;
+                                font-family: @baseFont2;
+                                font-size: 13px;
+                                &:after{
+                                    position: relative;
+                                    content: '';
+                                    width: 0;
+                                    height: 3px;
+                                    background: #fff;
+                                    display: block;
+                                    .transition();
+                                }
+                                &+ .dropdown-menu{
+                                    display: block;
+                                    white-space: nowrap;
+                                    border-radius: 0;
+                                    background: @baseColor;
+                                    border: none;
+                                    transform: scale(1,0);
+                                    transform-origin: top;
+                                    .transition();
+                                    li{
+                                        position: relative;
+                                        a{
+                                            line-height: 40px;
+                                            &:after{
+                                                display: none;
+                                            }
+                                            &+ .dropdown-menu{
+                                                transform: scale(1,0);
+                                                left: 100%;
+                                                top: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &.active{
+                                a{
+                                    &:after{
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                            &:hover,&:focus{
+                                a{
+                                    background: none;
+                                    &:after{
+                                        width: 100%;
+                                    }
+                                    &+ .dropdown-menu{
+                                        transform: scale(1,1);
+                                        li{
+                                            a{
+                                                
+                                            }
+                                            &:hover{
+                                                a{
+                                                    &+ .dropdown-menu{
+                                                        transform: scale(1,1);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            } //Menu Area
+            .search_form_area{
+                width: ~"calc(100% - 695px)";
+                form{
+                    .input-group{
+                        width: 100%;
+                        position: relative;
+                        span{
+                            padding: 0;
+                            line-height: 60px;
+                            color: #fff;
+                            background: none;
+                            border-radius: 0;
+                            border: none;
+                            position: absolute;
+                            left: 0;
+                            font-size: 18px;
+                            .transition();
+                        }
+                        input{
+                            padding: 0 15px 0 45px;
+                            line-height: 60px;
+                            height: 60px;
+                            background: none;
+                            border-radius: 0;
+                            width: 100%;
+                            color: #fff;
+                            font-family: @baseFont3;
+                            font-size: 15px;
+                            border: none;
+                            box-shadow: none;
+                            display: block;
+                            .transition();
+                            &:focus{
+                                background: fade(#000,6%);
+                                & + span{
+                                    padding: 0 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .free_analysis{
+                    float: right;
+                    border: none;
+                    background: fade(#000,6%);
+                    line-height: 60px;
+                    padding: 0 20px;
+                    color: #fff;
+                    font-family: @baseFont2;
+                    text-transform: uppercase;
+                    img{
+                        margin-right: 5px;
+                    }
+                }
+            } // Search And Analysis
+        } //Menu Row
+    }
+}
